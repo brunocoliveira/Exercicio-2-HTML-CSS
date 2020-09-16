@@ -2,11 +2,12 @@
 
 body {
 	position: relative;
+	width: auto;
 	font-family: 'Ebrima', sans-serif;
 	font-weight: normal;
 	color: white;
 	background-color: rgb(48,50,62);
-	margin: auto 120px;
+	margin: auto 5px;
 }
 header.topo {
 	display: inline-flex;
@@ -18,9 +19,9 @@ img.icone {
     max-height:190px;
 }
 nav.menu ul {
-	width: 450px;
+	width: 440px;
 	margin-top: 35px;
-	margin-left: 250px;
+	margin-left: 180px;
 }
 nav.menu li {
 	font-size: 12pt;
@@ -50,12 +51,16 @@ nav.menu a:hover {
 	height: 40px;
 	font-size: 12px;
 	font-weight: bolder;
-	display: inline;
-    margin-left: 0px;
+	margin-left: 0px;
     margin-top: 25px;
     padding: 10px 25px;
 }
+nav.cat {
+	margin-left: 0px;
+	width: 700px;
+}
 nav.cat ul {
+	width: 1000px;
 	margin-top: 30px;
 	padding-top: 20px;
 	margin-bottom: 0px;
@@ -83,17 +88,16 @@ a#post  {
 	text-decoration: none;
 	color: white;
 }
-
 div.titulo {
 	background-image:url("./../imagens/fundoinicio.png");
 	background-size: 100%;
 	background-repeat: no-repeat;
 	height: 400px;
-	margin: -20px -120px 0px -120px;
+	margin: -20px 0px 0px -120px;
 }
 div.titulo h1 {
 	font-size: 58px;
-	width: 60%;
+	width: 80%;
     margin-left: 120px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -124,9 +128,9 @@ section.corpo {
 	width: 72%;
 }
 img.fotoprinc {
-	margin-top: -100px;
+	margin-top: -120px;
 	margin-bottom: 15px;
-	max-width:810px;
+	width: 100%;
 }
 section.corpo p {
 	font-size: 20px;
@@ -145,7 +149,7 @@ div.lateral {
 	width: 260px;
 	height: 270px;
 	border-radius: 3px;
-	margin-top: -1428px;
+	margin-top: -1440px;
 }
 div.lateral a {
 	font-size: 20px;
@@ -203,7 +207,7 @@ section.contato {
 	display: inline-flex;
 }
 div.part1 {
-	width: 60%;
+	width: 65%;
 	height: 525px;
 	background-color: #2A2A34;
 	margin: 80px 0px 0px -120px;
@@ -256,8 +260,8 @@ input#cNum {
     font-size: 16px;
     position: absolute;
     display: block;
-    top: 86.2%;
-    left: 130px;
+    top: 86%;
+    left: 132px;
     transform: translate(-50%, -50%);
 }
 .enviar {
@@ -271,7 +275,6 @@ input#cNum {
 	height: 44px;
 	font-size: 12px;
 	font-weight: bolder;
-	display: inline;
 	margin-left: 10px;
     margin-top: 0px;
 	padding: 9px 25px;
@@ -290,8 +293,8 @@ div.part2 {
 	width: 35%;
 	height: 420px;
 	background-color: #30323E;
-	margin: 80px -120px 0px 0px;
-	padding: 110px 0px 40px 80px;
+	margin: 80px -60px 0px 00px;
+	padding: 110px 0px 40px 50px;
 	line-height: 1px;
 }
 .empresas h1 {
@@ -311,7 +314,8 @@ div.part2 {
 	line-height: 25px;
 }
 .faleconosco {
-	margin-right: -120px;
+	width: 400px;
+	margin-right: -100px;
 }
 .fale {
 	background-color: #30323E;
@@ -342,23 +346,22 @@ div.part2 {
 	color: #F5BB33;	
 }
 .fotobarra {
-	width: 680px;
-	margin-left:-80px;
-	margin-top: 28px;
+	width: 480px;
+	margin-left: -50px;
+	margin-top: 80px;
 }
 
 .rodape {
 	display: inline-flex;
 	background-color: #2A2A34;
-	margin: 0px -120px;
+	margin: 0px auto;
 	width: 100%;
 	height: 100px;
 	padding-top: 10px;
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-right: 0px;
 }
 img.iconerodape {
-	max-width:210px;
+	max-width:190px;
     max-height:190px;
     margin-top: 15px;
 }
@@ -366,7 +369,7 @@ nav.menufinal ul {
 	display: flex;
 	width: 400px;
 	margin-top: 35px;
-	margin-left: 300px;
+	margin-left: 200px;
 	margin-right: 0px;
 }
 nav.menufinal li {
@@ -397,9 +400,15 @@ nav.menufinal a  {
 
 
 
+
 @media (min-width: 1440px) {
 	body {
 		margin: auto 170px;
+	}
+	nav.menu ul {
+		width: 450px;
+		margin-top: 35px;
+		margin-left: 310px;
 	}
 	div.titulo {
 		background-size: 100%;
@@ -416,11 +425,17 @@ nav.menufinal a  {
 	nav.datapost ul {
 		margin-left: 70px;
 	}
+	section.corpo {
+		width: 75%;
+	}
+	img.fotoprinc {
+		max-width: 100%;
+	}
 	section.corpo p {
 		width: 100%;
 	}
 	div.lateral {
-		margin-top: -1430px;
+		margin-top: -1400px;
 		margin-left: 830px;
 	}
 	section.contato {
@@ -431,19 +446,24 @@ nav.menufinal a  {
 		margin: 80px 0px 0px -170px;
 	}
 	.input-container:after {
-	    top: 86.4%;
+	    top: 86%;
 	    left: 80px;
 	}
 	div.part2 {
 		margin: -605px 100px 25px 575px;
 	}
 	.fotobarra {
-		width: 690px;
+		width: 700px;
+		margin-left:-50px;
+		margin-top: 20px;
 	}
 	.rodape {
 		padding-left: 190px;
 	    padding-right: 150px;
 	    margin-left: -170px;
+	}
+	nav.menufinal ul {
+		margin-left: 370px;
 	}
 }
 
@@ -452,22 +472,24 @@ nav.menufinal a  {
 @media (max-width: 768px) {
 	body {
 		width: 100%;
-		margin: 0px;
+		margin: 0px auto;
 	}
 	header.topo {
-		max-width: 100%;
+		width: 100%;
 		display: block;
 		text-align: center;
 	}
 	img.icone {
 		max-width: 400px;
-	}nav.menu {
-		width: 400px;
+	}
+	nav.menu {
+		display: block;
+		width: 100%;
 	}
 	nav.menu ul {
 		display: inline-grid;
-		width: 400px;
-		margin: 0px;
+		width: auto;
+		margin: auto;
 		padding: 0px;
 	}
 	nav.menu a:hover {
@@ -480,7 +502,11 @@ nav.menufinal a  {
 		max-height: 320px;
 		margin: 0px;
 	}
+	nav.cat {
+		width: 100%;
+	}
 	nav.cat ul {
+		width: auto;
 		margin-left: 0px;
 	}
 	nav.cat li {
@@ -490,33 +516,35 @@ nav.menufinal a  {
 		font-size:15px;
 	}
 	div.titulo h1 {
-		font-size: 38px;
-		max-width: 80%;
+		display: block;
+		font-size: 25px;
+		width: 98%;
 		margin-left: 0px;
-		padding-left: 40px;
+		padding-left: 5px;
 	}
 	nav.datapost {
-		max-width: 80%;
+		width: 100%;
+		margin: auto;
 	}
 	nav.datapost ul {
-		margin-left: -40px;
-		padding-left: 0px;
+		padding: 0px;
 	}
 	nav.datapost li {
-		font-size: 9pt;
+		font-size: 7pt;
+		padding: 5px;
 	}
 	section.corpo {
-		max-width: 100%;
+		width: 98%;
 		margin: 5px;
 	}
 	img.fotoprinc {
-		margin-top: -40px;
-		max-width: 137%;
+		margin-top: -90px;
+		max-width: 100%;
 	}
 	section.corpo p {
-		width: 136%;
+		width: 100%;
 		font-size: 16px;
-		margin: 10px 5px;
+		margin: 10px 0px;
 	}
 	section.corpo h2 {
 		width: 97%;
@@ -524,8 +552,8 @@ nav.menufinal a  {
 	}
 	div.lateral {
 		float: none;
-		margin: 10px;
-		width: 97.4%;
+		margin: 0px auto;
+		width: 97%;
 		height: 170px;
 	}
 	.fotodown {
@@ -534,26 +562,25 @@ nav.menufinal a  {
 	div.topicos {
 		display: block;
 		margin-top: 50px;
-		margin-bottom: 150px;
+		margin-bottom: 50px;
 		width: 100%;
 	}
 	.foto {
-		max-width: 390px;
-    	max-height: 390px;
+		max-width: 318px;
+    	max-height: 318px;
     	display: block;
     	margin-left: auto;
-    	margin-right: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
     }
 	div.topicos p {
+		display: inline-block;
 		text-align: center;
 		padding: 0px;
 		width: 100%;
-		display: block;
-    	margin: 10px;
-   	}
-	.parag {
-		height: 20px;
-		padding-bottom: 1px;
+		height: 40px;
+		margin: auto;
 	}
 	section.contato {
 		display: block;
@@ -561,23 +588,25 @@ nav.menufinal a  {
 	}
 	div.part1 {
 		width: 100%;
-		height: 800px;
+		height: auto;
 		margin: 1000px 0px 0px;
-		padding: 0px;
+		padding: 0px 0px 40px 0px;
 	}
 	.fotocel {
 		display: none;
 	}
 	section.formu {
 		text-align: center;
-		margin: 0px 10px;
+		margin: auto;
+		line-height: 40px;
+		height: auto;
 	}
 	.formu h1 {
-		font-size: 50px;
+		margin-top: 0px;
 		font-weight: 700;
 	}
 	.formu h2 {
-		font-size: 50px;
+		height: 100px;
 		font-weight: 100;
 	}
 	.formu h3 {
@@ -590,102 +619,94 @@ nav.menufinal a  {
 	}
 	input#cNum {
 		font-size: 18px;
-		padding-left: 80px;
+		padding-left: 50px;
 	    width: auto;
 	    height: 60px;
 	}
 	.input-container:after {
 		font-size: 30px;
-	    top: 76.8%;
-	    left: 95px;
+	    top: 75.8%;
+	    left: 175px;
 	}
 	.enviar {
 		border-radius: 10px;
 		width: auto;
-		height: 70px;
+		height: 60px;
 		font-size: 30px;
 		margin-left: auto;
-	    margin-top: 15px;
+		margin-top: 20px;
+		transform: translate(5%, 9%);
 	}
 	.tarifas {
 		font-size: 18px;
 	}
 	.download {
-		width: auto;
+		width: 50%;
 		height: 100px;
 	    }
 	div.part2 {
 		display: block;
 		margin: 0px 10px;
 		width: auto;
-		height: 330px;
+		height: auto;
 		padding-left: 0px;
     	padding-top: 40px;
-    	padding-bottom: 40px;
+		padding-bottom: 40px;
+		text-align: center;
 	}
 	.fotobarra {
 		display: none;
 	}
 	.faleconosco {
 		width: 100%;
+		margin: 0px;
 	}
 	.fale {
 		border-radius: 10px;
-		width: auto;
+		width: 90%;
 		height: 60px;
-		font-size: 25px;
-		margin-left: 0px;
+		font-size: 18px;
+		margin: auto;
 	}
 	.saiba {
 		width: auto;
 		height: 60px;
-		font-size: 25px;
-		margin-left: 0px;
+		font-size: 20px;
+		margin: auto;
 	}
 	.faleconosco span {
-		margin-left: -110px;
-		transform: translate(-50%, -20%);
+		transform: translate(-50%, -5%);
 	}
 	footer.rodape {
-		display: flex;
+		display: block;
+		text-align: center;
 		width: 100%;
-		height: 360px;
-		margin-top: 0px;
-		margin-left: 0px;
-		margin-right: 0px;
+		height: auto;
+		margin: auto;
 		padding: 0px;
 	}
 	img.iconerodape {
-		margin-top: 270px;
-		margin-left: auto;
+		margin: auto;
 	}
 	nav.menufinal {
-		width: 200px;
+		display: flex;
+		justify-items: center;
+		width: auto;
 		height: 100px;
-		margin-left: -210px;
+		margin-left: 0px;
 	}
 	nav.menufinal ul {
-		width: 200px;
+		width: 250px;
 		height: 100px;
-		text-align: center;
 		display: inline-grid;
-		margin: 0px;
+		margin: auto;
 		padding: 0px;
 	}
 	nav.menufinal li {
-		width: 190px;
 		height: 20px;
 	}
-	.face {
-		margin-top: 130px;
-		margin-left: -100px;
-	}
-	.twitt {
-		margin-top: 180px;
-		margin-left: -22px;
-	}
-	.insta {
-		margin-top: 230px;
-		margin-left: -25px;
+	.face .twitt .insta {
+		display: block;
+		margin: auto;
 	}
 }
