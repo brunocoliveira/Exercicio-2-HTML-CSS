@@ -258,11 +258,8 @@ input#cNum {
     width: 17px;
     height: 17px;
     font-size: 16px;
-    position: absolute;
-    display: block;
-    top: 86.1%;
-    left: 132px;
-    transform: translate(-50%, -50%);
+	display: flex;
+	transform: translate(75%, -175%);
 }
 .enviar {
 	background-color: #f6bb33;
@@ -403,7 +400,6 @@ nav.menufinal a  {
 @media (min-width: 2560px) {
 	body {
 		margin: auto 700px;
-		margin-color
 	}
 	nav.menu ul {
 		width: 450px;
@@ -446,10 +442,6 @@ nav.menufinal a  {
 		width: 68%;
 		padding-left: 700px;
 		margin: 80px 0px 0px -700px;
-	}
-	.input-container:after {
-	    top: 86.3%;
-	    left: 250px;
 	}
 	div.part2 {
 		margin: -605px 100px 25px 650px;
@@ -530,10 +522,6 @@ nav.menufinal a  {
 	}
 	input.enviar {
 		margin-top: 10px;
-	}
-	.input-container:after {
-		top: 86.4%;
-		left: 132px;
 	}
 	div.part2 {
 		margin: 90px 90px 15px 0px;
@@ -732,9 +720,8 @@ nav.menufinal a  {
 	    height: 60px;
 	}
 	.input-container:after {
-		font-size: 30px;
-	    top: 75.2%;
-	    left: 175px;
+		font-size: 25px;
+		transform: translate(85%, -260%);
 	}
 	.enviar {
 		border-radius: 10px;
