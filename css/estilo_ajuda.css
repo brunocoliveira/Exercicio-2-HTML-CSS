@@ -1,0 +1,419 @@
+@charset "UTF-8";
+
+body {
+	font-family: 'Ebrima', sans-serif;
+}
+
+div#interface {
+	width: 900px;
+	height: 420px;
+	background-color: rgb(48,50,62);
+	margin: -20px auto 0px auto;
+	padding: 20%;
+}
+
+/*Topo*/
+div#topo {
+	width: 900px;
+	height: 50px
+	background-color: rgb(246,187,51);
+}
+
+img#fundo {
+	position: absolute;
+	left: 850px;
+	top: 0px;
+	max-width: 650px;
+    max-height: 193px;
+}
+
+.baixarapp {
+	background-color: #f6bb33;
+	color: #2a2931;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 3px;
+	border: 0px;
+	width: 95px;
+	font-size: 10px;
+	font-weight: bolder;
+	position: absolute;
+	left: 1080px;
+	top: 5px;
+}
+
+header#topo img#icone {
+	position: absolute;
+	left: 300px;
+	top: 5px;
+	max-width:170px;
+    max-height:140px;
+}
+nav#menu {
+	display: block;
+}
+nav#menu ul {
+	position: absolute;
+	top: 2px;
+	left: 680px;
+}
+nav#menu li {
+	font-family: 'Ebrima', sans-serif;
+	color: white;
+	font-size: 9pt;
+	font-weight: bolder;
+	display: inline-block;
+	padding: -5px;
+	margin: 6px;
+}
+a  {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	color: rgb(244,187,54);
+	padding-bottom: 25px;
+	border-bottom: solid;
+	border-width: bolder;
+}
+/*Fim Topo*/
+
+/*Cabeçalho*/
+div#titulo {
+	font-family: 'Ebrima', sans-serif;
+	font-size: 18pt;
+	color: #ffffff;
+	background-color: rgb(42,42,52);
+	padding: 60px 820px 8px 290px;
+	position: absolute;
+	left: 10px;
+	top: 70px;
+}
+/*Fim Cabeçalho*/
+
+/*Corpo*/
+section#corpo {
+	width: 700px;
+	height: 100px;
+	float: left;
+}
+
+article#noticia-principal h2 {
+	font-family: 'Ebrima', sans-serif;
+	font-size: 14pt;
+	font-weight: bold;
+	padding: 20px 100px 20px 25px;
+}
+
+article#noticia-principal h3 {
+	font-family: 'Ebrima', sans-serif;
+	font-size: 11pt;
+	font-weight: normal;
+	padding: 10px 80px 10px 25px;
+}
+
+.accordion {
+  width: 90%;
+  margin: 3px 0px 3px -1px;
+}
+.accordion-item {
+  background-color: #F6BB33;
+  color: #1F2025;
+  margin: 15px -5px;
+}
+.accordion-item-header {
+  background-color: #2A2A34;
+  color: #FFFFFF;
+  min-height: 2px;
+  line-height: 2.5px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.accordion-item-header::after {
+  content: "\25BE";
+  font-size: 40px;
+  color:  #8E8D92;
+  position: absolute;
+  right: 25px;
+  left: 565px; 
+  top: 0px;
+  width: 48px;
+  height: 0px;
+  padding: 35px 0px 38px 27px;
+  background-color: #1F2025;
+}
+.accordion-item-header.active{
+  background-color: #F6BB33;
+  color: #1F2025;
+  transition: 0.3s;
+}
+.accordion-item-header.active::after {
+  content: "\25B4";
+  left: 565px; 
+  top: 0px;
+  width: 48px;
+  height: 0px;
+  padding: 35px 0px 248px 27px;
+  background-color: #DAA62E;
+  color: #1F2025;
+  transition: 0.3s;
+}
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s;
+}
+.accordion-item-body-content {
+  color: #1F2025;
+  padding: 0.5px;
+  line-height: 1.3rem;
+}
+
+nav#lateral {
+	display: block;
+}
+
+nav#lateral ul {
+	position: absolute;
+	top: 280px;
+	left: 990px;
+}
+
+nav#lateral li {
+	font-family: 'Ebrima', sans-serif;
+	color: white;
+	font-size: 10pt;
+	font-weight: bolder;
+	display: block;
+	padding: 6px;
+	margin: 5px;
+}
+
+span {
+	text-decoration: none;
+}
+
+span:hover {
+	color: rgb(244,187,54);
+	padding-left: 20px;
+	margin-left: -23px;
+	border-left: solid;
+	border-width: bolder;
+}
+/*Fim Corpo*/
+
+/*Formulário*/
+div#dadoscontato {
+	width: 900px;
+	height: 600px;
+	background-color: rgb(246,187,51);
+	margin: auto;
+	padding: 40px 20% 10px 20%;
+}
+
+header#contato-artigo h1 {
+	color: rgb(48,50,62);
+	font-family: 'Ebrima', sans-serif;
+	font-size: 35pt;
+	font-weight: bolder;
+	line-height: 0.1;
+}
+
+header#contato-artigo h2 {
+	color: rgb(48,50,62);
+	font-family: 'Ebrima', sans-serif;
+	font-size: 36pt;
+	font-weight: normal;
+	line-height: 0.4;
+}
+
+header#contato-artigo h3 {
+	color: rgb(42,42,52);
+	font-family: 'Ebrima', sans-serif;
+	font-size: 13pt;
+	font-weight: normal;
+	letter-spacing: 1.5px;
+}
+
+fieldset#usuario {
+	font-size: 11pt;
+	font-color: rgb(48,50,62);
+	font-weight: bolder;
+	border: none;
+}
+input#cNome {
+	height: 30px;
+	font-color: rgb(48,50,62);
+	background-color: rgb(246,187,51);
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgb(48,50,62);
+	border-radius: 5px;
+}
+
+fieldset#mail {
+	font-size: 11pt;
+	font-color: rgb(48,50,62);
+	font-weight: bolder;
+	border: none;
+}
+input#cMail {
+	height: 30px;
+	font-color: rgb(48,50,62);
+	background-color: rgb(246,187,51);
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgb(48,50,62);
+	border-radius: 5px;
+}
+
+fieldset#telefone {
+	font-size: 11pt;
+	font-color: rgb(48,50,62);
+	font-weight: bolder;
+	border: none;
+}
+input#cNum {
+	height: 30px;
+	font-color: rgb(48,50,62);
+	background-color: rgb(246,187,51);
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgb(48,50,62);
+	border-radius: 5px;
+}
+
+fieldset#mensagem {
+	font-size: 11pt;
+	font-color: rgb(48,50,62);
+	font-weight: bolder;
+	border: none;
+}
+textarea#cMsg {
+	font-family: 'Ebrima' sans-serif;
+	font-size: 11pt;
+	padding: 7px 7px 0px 7px;
+	height: 161px;
+	font-color: rgb(48,50,62);
+	background-color: rgb(246,187,51);
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgb(48,50,62);
+	border-radius: 5px;
+}
+
+::-webkit-input-placeholder  {
+	color: rgb(48,50,62);
+	font-family: 'Ebrima' sans-serif;
+}
+
+div#dadoscontato label {
+	color: rgb(48,50,62);
+	font-weight: bold;
+}
+
+div#col1 {
+	float: left;
+	width: 40%
+}
+div#col2 {
+	float: right;
+	width: 60%
+}
+div#col3 {
+	float: outside-right;
+	position: absolute;
+	width: 1200px;
+	height: 150px;
+}
+
+h4 {
+	position: absolute;
+	left: 760px;
+	top: 10px;
+	color: rgb(38,45,51);
+	font-size: 12px;
+}
+
+img#seta {
+	position: absolute;
+	left: 720px;
+	top: 20px;
+	max-width: 60px;
+    max-height: 30px;
+}
+
+.botaoenviar {
+	background-color: #2a2931;
+	color: #f6bb33;
+	margin: 10px;
+	padding: 10px 15px;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 3px;
+	border: 0px;
+	width: 100px;
+	font-size: 10px;
+	font-weight: bold;
+	position: absolute;
+	left: 890px;
+	top: 1500px;
+}
+/*Fim Formulário*/
+
+/*Rodapé*/
+footer#rodape {
+	font-family: 'Ebrima', sans-serif;
+	color: rgb(48,50,62);
+	font-size: 11pt;
+	text-align: right;
+	width: 900px;
+	background-color: rgb(246,187,51);
+	padding-top: 10px;
+	padding-right: 370px;
+	padding-bottom: 85px;
+	padding-left: 220px;
+	clear: both;
+	border-top: 1px solid #606060;
+}
+
+nav#rodape {
+	display: block;
+}
+
+nav#rodape ul {
+	list-style: none;
+	position: absolute;
+	top: 1670px;
+	left: 800px;
+}
+
+nav#rodape li {
+	display: inline-block;
+}
+
+img#logorodape {
+	position: absolute;
+	left: 320px;
+	top: 1675px;
+	max-width: 200px;
+    max-height: 150px;
+}
+
+p {
+	text-align: justify;
+	text-indent: 20px;
+	text-decoration: none;
+}
+
+p:hover {
+	text-decoration: underline;
+}
+/*Fim Rodapé*/
