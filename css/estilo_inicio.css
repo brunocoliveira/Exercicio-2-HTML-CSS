@@ -92,7 +92,7 @@ div.titulo {
 	background-size: 100%;
 	background-repeat: no-repeat;
 	height: 400px;
-	margin: -20px -120px 0px -120px;
+	margin: -20px -120px -100px -120px;
 }
 div.titulo h1 {
 	font-size: 58px;
@@ -122,12 +122,15 @@ nav.datapost a.um {
 span.tres {
 	text-decoration: underline;
 }
-
+.principal {
+	display: inline-flex;
+}
 section.corpo {
+	display: inline-block;
 	width: 76%;
+	margin-right: 15px;
 }
 img.fotoprinc {
-	margin-top: -100px;
 	margin-bottom: 15px;
 	width: 100%;
 }
@@ -138,7 +141,7 @@ section.corpo h2 {
 	font-size: 30px;
 }
 div.lateral {
-	float: right;
+	display: inline-block;
 	line-height: 0.8;
 	text-align: center;
 	padding-top: 45px;
@@ -148,7 +151,6 @@ div.lateral {
 	width: 260px;
 	height: 270px;
 	border-radius: 3px;
-	margin-top: -1415px;
 }
 div.lateral a {
 	font-size: 20px;
@@ -243,6 +245,7 @@ fieldset.telefone {
 	margin: 0px;
 }
 input#cNum {
+	color: white;
     width: 210px;
     height: 40px;
     padding-left: 37px;
@@ -340,9 +343,9 @@ div.part2 {
 	color: #F5BB33;	
 }
 .fotobarra {
-	width: 620px;
+	width: 156%;
 	margin-left: -50px;
-	margin-top: 40px;
+	margin-top: 55px;
 }
 .rodape {
 	display: inline-flex;
@@ -418,19 +421,6 @@ nav.menufinal a  {
 	nav.datapost ul {
 		margin-left: 580px;
 	}
-	section.corpo {
-		width: 75%;
-	}
-	img.fotoprinc {
-		max-width: 100%;
-	}
-	section.corpo p {
-		width: 100%;
-	}
-	div.lateral {
-		margin-top: -1400px;
-		margin-left: 830px;
-	}
 	section.contato {
 		display: block;
 	}
@@ -442,11 +432,6 @@ nav.menufinal a  {
 	div.part2 {
 		margin: -605px 100px 25px 650px;
 	}
-	.fotobarra {
-		width: 1210px;
-		margin-left:-50px;
-		margin-top: 20px;
-	}
 	.rodape {
 		padding-left: 700px;
 	    padding-right: 700px;
@@ -454,6 +439,17 @@ nav.menufinal a  {
 	}
 	nav.menufinal ul {
 		margin-left: 370px;
+	}
+}
+
+@media (min-width: 1440px) {
+	nav.menu ul {
+		margin-left: 330px;
+	}
+	.fotobarra {
+		width: 165%;
+		margin-left: -50px;
+		margin-top: 55px;
 	}
 }
 
@@ -468,6 +464,9 @@ nav.menufinal a  {
 		width: 400px;
 		padding-top: 10px;
 	}
+	div.titulo {
+		margin: -20px -120px -150px -120px;
+	}
 	div.titulo h1 {
 		margin-top: 20px;
 		margin-bottom: 20px;
@@ -476,27 +475,24 @@ nav.menufinal a  {
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
-	section.corpo {
-		width: 74%;
-	}
-	img.fotoprinc {
-		margin-top: -150px;
-	}
 	div.lateral {
-		width: 190px;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		width: 180px;
 		height: 190px;
-		padding: 30px 0px;
-		margin-top: -1550px;
-	}
-	div.lateral a {
-		font-size: 15px;
 	}
 	div.lateral h1 {
 		font-size: 20px;
 	}
+	div.lateral a {
+		font-size: 15px;
+	}
+	.fotodown {
+		max-width: 110px;
+	}
 	div.topicos {
-		width: 190px;
-		margin-top: 40px;
+		width: 180px;
+		margin-top: 65px;
 	}
 	img.foto {
 		width: 75px;
@@ -505,7 +501,9 @@ nav.menufinal a  {
 		width: 90px;
 		padding-left: 80px;
 		padding-bottom: 10px;
-		font-size: 13.1px;
+		font-size: 11px;
+		margin-top: -80px;
+		padding-top: 30px;
 	}
 	section.contato {
 		width: 900px;
@@ -515,6 +513,9 @@ nav.menufinal a  {
 	}
 	.formu h2 {
 		font-size: 30px;
+	}
+	.enviar {
+		transform: translate(-8%, -20%);
 	}
 	div.part2 {
 		margin: 90px 90px 15px 0px;
@@ -591,7 +592,7 @@ nav.menufinal a  {
 	}
 	nav.cat ul {
 		width: auto;
-		margin-left: 0px;
+		margin-left: 10px;
 		padding-left: 10px;
 	}
 	nav.cat li {
@@ -600,9 +601,13 @@ nav.menufinal a  {
 	.fa-home {
 		font-size:15px;
 	}
+	div.titulo {
+		margin-bottom: 30px;
+	}
 	div.titulo h1 {
 		display: block;
-		font-size: 250%;
+		font-size: 290%;
+		text-align: center;
 		width: 98%;
 		margin-left: 0px;
 		padding-left: 5px;
@@ -613,39 +618,49 @@ nav.menufinal a  {
 	}
 	nav.datapost ul {
 		padding: 0px;
+		margin-left: 15px;
 	}
 	nav.datapost li {
 		font-size: 80%;
 		padding: 5px;
 	}
+	.principal {
+		display: block;
+	}
 	section.corpo {
 		width: 99%;
-		margin: 5px;
+		margin: auto;
 	}
 	img.fotoprinc {
 		margin-top: -120px;
-		max-width: 100%;
+		max-width: 98%;
+		margin-left: 10px;
 	}
 	section.corpo p {
-		width: 100%;
+		width: 98%;
 		font-size: 16px;
-		margin: 10px 0px;
+		margin: 10px 15px;
 	}
 	section.corpo h2 {
-		width: 97%;
+		width: 98%;
 		font-size: 20px;
+		margin: 0 15px;
 	}
 	div.lateral {
-		float: none;
+		display: block;
 		margin: 0px auto;
 		width: 97%;
 		height: 170px;
 	}
 	div.lateral h1 {
-		font-size: 150%;
+		font-size: 180%;
+	}
+	div.lateral a {
+		font-size: 20px;
 	}
 	.fotodown {
 		margin-bottom: 10px;
+		max-width: 130px;
 	}
 	div.topicos {
 		text-align: center;
@@ -700,25 +715,27 @@ nav.menufinal a  {
 	}
 	.formu h1 {
 		margin-top: 0px;
-		font-size: 370%;
+		font-size: 360%;
 		font-weight: 700;
 	}
 	.formu h2 {
+		margin-top: -35px;
 		height: 0px;
 		font-weight: 100;
 	}
 	.formu h3 {
+		margin-top: 70px;
 		font-size: 25px;
 		font-weight: 100;
-		line-height: 160px;
 	}
 	fieldset.telefone {
+		display: inline-block;
 		font-size: 18px;
 	}
 	input#cNum {
 		font-size: 18px;
 		padding-left: 50px;
-	    width: auto;
+	    width: 300px;
 	    height: 60px;
 	}
 	.input-container:after {
@@ -726,22 +743,28 @@ nav.menufinal a  {
 		transform: translate(85%, -260%);
 	}
 	.enviar {
-		display: block;
 		border-radius: 10px;
 		width: 45%;
 		height: 20%;
 		font-size: 140%;
 		padding: 3% 8%;
 		margin-top: 40px;
-		margin-left: auto;
-		margin-right: auto;
+		margin-left: 0;
 	}
 	.tarifas {
 		font-size: 18px;
 	}
 	.download {
-		width: 50%;
+		width: 35%;
 		height: auto;
+	}
+	.empresas h1 {
+		font-size: 50px;
+	}
+	.empresas h3 {
+		font-size: 30px;
+		padding: 30px;
+		line-height: 30px;
 	}
 	div.part2 {
 		margin: 0px;
@@ -762,19 +785,21 @@ nav.menufinal a  {
 	}
 	.fale {
 		border-radius: 10px;
-		width: 120%;
+		width: 100%;
 		height: 50px;
 		font-size: 80%;
 		margin: auto;
 	}
 	.saiba {
 		width: auto;
-		height: 60px;
+		height: 55px;
 		font-size: 80%;
-		margin: auto;
+		margin-left: -20px;
 	}
 	.faleconosco span {
-		transform: translate(40%, -240%);
+		width: 50px;
+	    padding-left: 70px;
+		transform: translate(40%, -225%);
 	}
 	.rodape {
 		display: block;
@@ -810,23 +835,46 @@ nav.menufinal a  {
 }
 
 @media (max-width: 425px) {
+	div.titulo h1 {
+		font-size: 250%;
+	}	
 	img.fotoprinc {
 		margin-top: -70px;
 	}
 	div.topicos p {
 		font-size: 100%;
 	}
+	.formu h1 {
+		font-size: 320%;
+	}
+	.enviar {
+		font-size: 130%;
+	}
+	.download {
+		width: 50%;
+		height: auto;
+	}
+	.empresas h1 {
+		font-size: 45px;
+	}
+	.empresas h2 {
+		font-size: 30px;
+	}
+	.empresas h3 {
+		font-size: 25px;
+	}
 }
-
 @media (max-width: 375px) {
 	img.fotoprinc {
 		margin-top: -10px;
 	}
 }
-
 @media (max-width: 320px) {
 	nav.cat ul {
 		font-size: 11px;
+	}
+	img.fotoprinc {
+		margin-top: -30px;
 	}
 	.formu h1 {
 		font-size: 280%;
@@ -836,5 +884,8 @@ nav.menufinal a  {
 	}
 	.formu h3 {
 		line-height: 50px;
+	}
+	input#cNum {
+		width: 200px;
 	}
 }
