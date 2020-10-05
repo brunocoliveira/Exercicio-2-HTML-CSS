@@ -465,15 +465,20 @@ nav.menufinal a  {
 		padding-top: 10px;
 	}
 	div.titulo {
-		margin: -20px -120px -150px -120px;
+		margin: -20px -120px -170px -120px;
 	}
 	div.titulo h1 {
+		font-size: 40px;
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
 	nav.datapost ul {
+		width: 520px;
 		margin-top: 10px;
 		margin-bottom: 10px;
+	}
+	nav.datapost li {
+		font-size: 11pt;
 	}
 	div.lateral {
 		padding-top: 25px;
@@ -541,7 +546,11 @@ nav.menufinal a  {
 		font-size: 8px;
 	}
 	.rodape {
-	    margin-left: -120px;
+		text-align: center;
+		margin: 0px;
+		margin-left: -23%;
+		width: auto;
+		padding-left: 185px;
 	}
 	nav.menufinal ul {
 		width: 430px;
@@ -555,7 +564,7 @@ nav.menufinal a  {
 
 @media (max-width: 768px) {
 	body {
-		width: 100%;
+		width: auto;
 		margin: 0px;
 	}
 	header.topo {
@@ -596,17 +605,17 @@ nav.menufinal a  {
 		padding-left: 10px;
 	}
 	nav.cat li {
-		font-size: 13px;
+		font-size: 12px;
 	}
 	.fa-home {
 		font-size:15px;
 	}
 	div.titulo {
-		margin-bottom: 30px;
+		margin-bottom: -100px;
 	}
 	div.titulo h1 {
 		display: block;
-		font-size: 290%;
+		font-size: 240%;
 		text-align: center;
 		width: 98%;
 		margin-left: 0px;
@@ -617,38 +626,35 @@ nav.menufinal a  {
 		margin: auto;
 	}
 	nav.datapost ul {
+		width: 90%;
 		padding: 0px;
-		margin-left: 15px;
+		margin-left: 10px;
 	}
 	nav.datapost li {
-		font-size: 80%;
+		font-size: 70%;
 		padding: 5px;
 	}
 	.principal {
 		display: block;
+		width: 100%;
+	}
+	.fotoprinc {
+		margin-left: 5px;
 	}
 	section.corpo {
 		width: 99%;
 		margin: auto;
 	}
-	img.fotoprinc {
-		margin-top: -120px;
-		max-width: 98%;
-		margin-left: 10px;
-	}
 	section.corpo p {
-		width: 98%;
 		font-size: 16px;
-		margin: 10px 15px;
+		margin: 10px 10px;
 	}
 	section.corpo h2 {
-		width: 98%;
-		font-size: 20px;
 		margin: 0 15px;
 	}
 	div.lateral {
 		display: block;
-		margin: 0px auto;
+		margin: 30px auto;
 		width: 97%;
 		height: 170px;
 	}
@@ -665,7 +671,7 @@ nav.menufinal a  {
 	div.topicos {
 		text-align: center;
 		margin-top: 50px;
-		margin-bottom: 50px;
+		margin-bottom: 85px;
 		width: 100%;
 	}
 	img.foto {
@@ -724,7 +730,7 @@ nav.menufinal a  {
 		font-weight: 100;
 	}
 	.formu h3 {
-		margin-top: 70px;
+		margin-top: 45px;
 		font-size: 25px;
 		font-weight: 100;
 	}
@@ -764,7 +770,7 @@ nav.menufinal a  {
 	.empresas h3 {
 		font-size: 30px;
 		padding: 30px;
-		line-height: 30px;
+		line-height: 40px;
 	}
 	div.part2 {
 		margin: 0px;
@@ -807,15 +813,16 @@ nav.menufinal a  {
 		height: auto;
 		margin: auto;
 		padding: 0px;
+		padding-bottom: 20px;
 	}
 	img.iconerodape {
-		margin: auto;
+		margin: 20px auto;
 	}
 	nav.menufinal {
 		display: flex;
 		justify-items: center;
 		width: auto;
-		height: 100px;
+		height: 120px;
 		margin-left: 0px;
 	}
 	nav.menufinal ul {
@@ -826,23 +833,39 @@ nav.menufinal a  {
 		padding: 0px;
 	}
 	nav.menufinal li {
-		height: 15px;
+		height: 20px;
+		padding: 3px 15px;
+		margin: 5px auto;
 	}
 	.face .twitt .insta {
 		display: block;
-		margin: auto;
+	}
+	.face {
+		margin-top: 50px;
+    	margin-left: 0px;
+	}
+}
+
+@media (max-width: 518px) {
+	img.fotoprinc {
+		margin-top: 30px;
+		margin-left: 3px;
 	}
 }
 
 @media (max-width: 425px) {
-	div.titulo h1 {
-		font-size: 250%;
+	div.titulo {
+		margin-bottom: -50px;
+	}
+	.fotoprinc {
+		margin-left: 2px;
 	}	
-	img.fotoprinc {
-		margin-top: -70px;
+	div.titulo h1 {
+		font-size: 220%;
 	}
 	div.topicos p {
-		font-size: 100%;
+		font-size: 95%;
+		padding-bottom: 10px;
 	}
 	.formu h1 {
 		font-size: 320%;
@@ -864,17 +887,45 @@ nav.menufinal a  {
 		font-size: 25px;
 	}
 }
+
 @media (max-width: 375px) {
-	img.fotoprinc {
-		margin-top: -10px;
+	section.corpo p {
+		width: 95%;
+		font-size: 15px;
+		margin: 10px 10px;
+	}
+	.formu h1 {
+		font-size: 300%;
+	}
+	.formu h2 {
+		font-size: 23px;
+	}
+	.formu h3 {
+		font-size: 21px;
+	}
+	input#cNum {
+		width: 205px;
+	}
+	.empresas h1 {
+		font-size: 40px;
+	}
+	.empresas h3 {
+		font-size: 23px;
 	}
 }
+
 @media (max-width: 320px) {
 	nav.cat ul {
-		font-size: 11px;
+		font-size: 2px;
+	}
+	div.titulo h1 {
+		font-size: 175%;
+	}
+	nav.datapost li {
+		font-size: 75%;
 	}
 	img.fotoprinc {
-		margin-top: -30px;
+		margin-top: 0px;
 	}
 	.formu h1 {
 		font-size: 280%;
